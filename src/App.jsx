@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import ListParks from './pages/ListParks';
 
 function App() {
   return (
     <div className="App">
-     <h1>Park Application</h1>
+     <ListParks />
     </div>
   );
 }
