@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import ParkServices from '../services/ParkServices'
+import React, { Component } from 'react';
+import ParkServices from '../../services/ParkServices';
+import './List.css';
 
 export default class ListParks extends Component {
     constructor(props){
