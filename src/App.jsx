@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navbar from './component/Navbar/Navbar';
 import ListParks from './pages/Parks/ListParks';
+import AddPark from './pages/AddPark/AddPark';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
-        <Route path="/" component={ListParks} />s
+        <Route exact path="/" component={ListParks} />
+        <Route path="/add" component={AddPark} />
      </Switch>
     </div>
     </Router>

@@ -1,0 +1,56 @@
+.add-content{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.add-park{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 480px;
+    width: 100%;
+    border: 2px solid #0b8457;
+}
+
+.add-park h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.add-park form{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-park form h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.add-park form input{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.add-park form .send{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #eac100;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1.2px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
