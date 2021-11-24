@@ -10,6 +10,17 @@ export default class ListParks extends Component {
             parks: []
         }
     }
+
+    deletePark(id){
+        ParkServices.deletePark(id).then(res => {
+            this.setState({parks: this.state.parks.filter(park => park.id !== id)});
+        });
+    }
+
+    editPark(id){
+        this.props.history.push(`/update/${id}`);
+    }
+
     componentDidMount(){
         ParkServices.getParks().then((res) =>{
             this.setState({parks: res.data});
@@ -26,15 +37,15 @@ export default class ListParks extends Component {
                             <img src={park.imageUrl} alt="" />
                             <div className="card-details">
                                 <h2>{park.name}</h2>
-                                <p>Email: {park.address}</p>
-                                <p>Job Title: {park.slots}</p>
-                                <p>Job Title: {park.type}</p>
-                                <p>{park.price}</p>
+                                <p>Address: {park.address}</p>
+                                <p>Number of Slots: {park.slots}</p>
+                                <p>Park Type: {park.type}</p>
+                                <p>Rs.{park.price}</p>
                                 <h3>Phone Number: {park.phone}</h3>
-                                {/*<div className="button-group">
-                                    <button onClick={ () => this.editEmployee(employee.id) } className="card-btn" >Edit</button>
-                                    <button onClick={ () => this.deleteEmployee(employee.id) } className="card-btn" >delete</button>
-                    </div>*/}
+                                <div className="button-group">
+                                    <button onClick={ () => this.editPark(park.id) } className="card-btn" >Edit</button>
+                                    <button onClick={ () => this.deletePark(park.id) } className="card-btn" >delete</button>
+                                </div>
                                 
                             </div>
                         </div>
