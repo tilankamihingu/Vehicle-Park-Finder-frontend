@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Filter from '../../component/Filter';
 import ParkServices from '../../services/ParkServices';
 import './List.css';
 
@@ -30,6 +31,11 @@ export default class ListParks extends Component {
         return (
             <div className="park-full">
             <div className="park-container">
+                {/*<div className="search-box">
+                    <input type="text" placeholder="search by town name"/>
+                    <button>search</button>
+        </div>*/}
+        <Filter />
             <div className="park-row">
                 {
                     this.state.parks.map(park =>(

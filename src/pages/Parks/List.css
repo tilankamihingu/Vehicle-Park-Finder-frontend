@@ -4,6 +4,39 @@
 .park-container{
     width: 100%;
     padding-top: 20px;
+    margin-top: 80px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.search-box input{
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+    border: 1px solid #000;
+    padding-left: 5px;
+}
+
+.search-box button{
+    background: #e1ad01;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    border: none;
+    height: 40px;
+    margin-left: 10px;
+    width: 140px;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
 .park-row{
@@ -24,7 +57,7 @@
     cursor: pointer;
     border-radius: 10px;
     background: #fff;
-    box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 10px #ccc;
 }
 
 .park-card img{
