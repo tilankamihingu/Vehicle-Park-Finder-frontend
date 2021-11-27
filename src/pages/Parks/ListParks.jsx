@@ -9,6 +9,7 @@ export default class ListParks extends Component {
 
         this.state = {
             parks: [],
+            filtered: [],
         }
     }
     
@@ -24,33 +25,42 @@ export default class ListParks extends Component {
 
     componentDidMount(){
         ParkServices.getParks().then((res) =>{
-            this.setState({parks: res.data});
+            this.setState({parks: res.data, filtered: res.data});
         })
     }
+
+    filterParks = (event) => {
+        const search = event.target.value.toLowerCase();
+        if(search.trim().length > 0){
+            const filtered = this.state.parks.filter(park => {
+                return park.name.toLowerCase().search(search) > 0
+            });
+            this.setState({
+                filtered: filtered
+            })
+        }else{
+            this.setState({
+                filtered: this.state.parks
+            })
+        }
+        
+        
+    }
     render() {
-        const {parks} = this.state;
-        const {search} = ParkServices;
+       
         return (
             <div className="park-full">
             <div className="park-container">
                 <div className="search-box">
                     <input type="text"
                     placeholder="search by town name"
-                    onChange={async (event) =>{
-                        const value = event.target.value;
-                        try {
-                            const data = await search(value);
-                            console.log(data);
-                        } catch (error) {
-                            console.error(error);
-                        }
-                    }}
+                    onChange={this.filterParks}
                     />
                     <button>search</button>
         </div>
             <div className="park-row">
                 {
-                    parks.map(park =>(
+                    this.state.filtered.map(park =>(
                         <div className="park-card" key={park.id}>
                             <img src={park.imageUrl} alt="" />
                             <div className="card-details">
