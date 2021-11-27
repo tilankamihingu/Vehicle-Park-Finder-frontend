@@ -27,6 +27,10 @@ class ParkService {
    search = (query) =>{
        return axios.get(SEARCH_API_BASE_URL + `/park?name=${query}`);
    }
+
+   getParkByName(query){
+       return axios.get(SEARCH_API_BASE_URL + `/park?name=${query}`);
+   }
 }
 
 export default new  ParkService()

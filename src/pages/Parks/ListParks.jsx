@@ -8,10 +8,10 @@ export default class ListParks extends Component {
         super(props)
 
         this.state = {
-            parks: []
+            parks: [],
         }
     }
-
+    
     deletePark(id){
         ParkServices.deletePark(id).then(res => {
             this.setState({parks: this.state.parks.filter(park => park.id !== id)});
@@ -28,17 +28,29 @@ export default class ListParks extends Component {
         })
     }
     render() {
+        const {parks} = this.state;
+        const {search} = ParkServices;
         return (
             <div className="park-full">
             <div className="park-container">
-                {/*<div className="search-box">
-                    <input type="text" placeholder="search by town name"/>
+                <div className="search-box">
+                    <input type="text"
+                    placeholder="search by town name"
+                    onChange={async (event) =>{
+                        const value = event.target.value;
+                        try {
+                            const data = await search(value);
+                            console.log(data);
+                        } catch (error) {
+                            console.error(error);
+                        }
+                    }}
+                    />
                     <button>search</button>
-        </div>*/}
-        <Filter />
+        </div>
             <div className="park-row">
                 {
-                    this.state.parks.map(park =>(
+                    parks.map(park =>(
                         <div className="park-card" key={park.id}>
                             <img src={park.imageUrl} alt="" />
                             <div className="card-details">
