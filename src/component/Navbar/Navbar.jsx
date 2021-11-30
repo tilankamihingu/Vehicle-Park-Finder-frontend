@@ -21,6 +21,7 @@ function Navbar() {
                 <nav>
                     <ul style={styleMenu}>
                         <li onClick={toggleMenu}><Link to="/">Home</Link></li>
+                        <li onClick={toggleMenu}><Link to="/parks">Parks</Link></li>
                         <li onClick={toggleMenu}><Link to="/add">Add Park</Link></li>
                         <li onClick={toggleMenu}><img src={Close} className="menu" alt="" /></li>
                     </ul>

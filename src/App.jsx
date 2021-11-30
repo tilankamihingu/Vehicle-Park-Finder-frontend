@@ -6,6 +6,7 @@ import ListParks from './pages/Parks/ListParks';
 import AddPark from './pages/AddPark/AddPark';
 import UpdatePark from './pages/UpdatePark/UpdatePark';
 import Footer from './component/Footer/Footer';
+import Home from './pages/Home/Home';
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
-        <Route exact path="/" component={ListParks} />
+        <Route exact path="/" component={Home} />
+        <Route path="/parks" component={ListParks} />
         <Route path="/add" component={AddPark} />
         <Route path="/update/:id" component={UpdatePark} />
      </Switch>
