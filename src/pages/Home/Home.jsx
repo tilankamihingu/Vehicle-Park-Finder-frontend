@@ -15,14 +15,22 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="about-container">
-                <div className="about-content">
-                    <div className="about-details">
-                        <h1>About Us</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem atque quia iste totam nam soluta alias facere, eos accusamus assumenda, voluptas sit nihil corrupti! Rem sit unde cumque alias sint!</p>
+            <div className="contact-container">
+                <div className="contact-left">
+                    <div className="left-content">
+                        <h1>Contact us</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in distinctio, ut praesentium aperiam accusantium?</p>
+                        <input type="text" placeholder="Enter Your Name" />
+                        <input type="text" placeholder="Enter Your Email" />
+                        <textarea name="" id="" cols="30" rows="8" placeholder="Enter your message" />
+                        <button className="contact-submit">submit</button>
                     </div>
-                    <div className="about-image">
-                        <img src={AboutImage} alt="" />
+                </div>
+                <div className="contact-right">
+                    <div className="right-content">
+                        <p>hhvgjkhbkbk</p>
+                        <p>ikjhk</p>
+                        <p>hvkjbkjnblkljkn</p>
                     </div>
                 </div>
             </div>
