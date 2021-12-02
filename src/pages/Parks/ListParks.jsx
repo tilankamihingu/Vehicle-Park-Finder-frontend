@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Filter from '../../component/Filter';
 import ParkServices from '../../services/ParkServices';
 import './List.css';
 

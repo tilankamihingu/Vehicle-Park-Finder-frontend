@@ -1,0 +1,36 @@
+.slider{
+    /*background-color: crimson;*/
+     padding: 10px;
+     display: flex;
+     width: 100%;
+ }
+ 
+ .owl-theme{
+     /*background-color: darkgreen;*/
+     padding: 10px;
+     justify-content: center;
+ }
+ 
+ .item{
+     background-color: #dee1ec;
+     box-shadow: 0 0 5px #ccc;
+     height: 400px;
+     margin: 5px;
+     display: flex;
+     justify-content: center;
+     padding: 10px;
+ }
+ 
+ .item img{
+     width: 100%;
+     min-height: 200px;
+     height: 100%;
+     display: block;
+     object-fit: cover;
+ }
+ 
+ @media  screen and (max-width:700px) {
+     .item{
+         height: 220px;
+     }
+ }

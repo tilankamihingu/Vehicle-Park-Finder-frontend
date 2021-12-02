@@ -17,11 +17,11 @@ class ParkService {
    }
 
    updatePark(park, parkId){
-       return axios.put(`${PARK_API_BASE_URL}/parks` + '/' + parkId, park);
+       return axios.put(`${PARK_API_BASE_URL}/parks/` + parkId, park);
    }
 
    deletePark(parkId){
-       return axios.delete(`${PARK_API_BASE_URL}/parks` + '/' + parkId);
+       return axios.delete(`${PARK_API_BASE_URL}/parks/${parkId}`);
    }
 
    search(query){

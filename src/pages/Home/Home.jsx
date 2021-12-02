@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Slider from '../../component/Slider/Slider';
 import './Home.css';
-import AboutImage from '../../images/about.jpg'
 
 const Home = () => {
     return (
@@ -15,14 +15,23 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="contact-container">
+            <div className="about-container">
+                <div className="about-content">
+                    <h1>Get to know Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minus illum praesentium, atque possimus quos, esse nulla quae quod provident temporibus animi! Totam quod nesciunt mollitia iusto deserunt culpa at!</p>
+                </div>
+            </div>
+            <div className="category-container">
+                <Slider />
+            </div>
+            <div className="contact-container" id="contact">
                 <div className="contact-left">
                     <div className="left-content">
                         <h1>Contact us</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in distinctio, ut praesentium aperiam accusantium?</p>
                         <input type="text" placeholder="Enter Your Name" />
                         <input type="text" placeholder="Enter Your Email" />
-                        <textarea name="" id="" cols="30" rows="8" placeholder="Enter your message" />
+                        <textarea name="" id="" cols="10" rows="8" placeholder="Enter your message" />
                         <button className="contact-submit">submit</button>
                     </div>
                 </div>

@@ -12,7 +12,8 @@
     align-items: center;
     justify-content: space-between;
     /*background: #17b978;*/
-    background-color: #071a52;
+    /*background-color: #071a52;*/
+    background-color: #000000;
     position: fixed;
     overflow: hidden;
     top: 0;
