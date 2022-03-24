@@ -4,12 +4,12 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 import './Slider.css';
-import One from '../../images/park1.jpg';
-import Two from '../../images/park2.jpg';
-import Three from '../../images/park3.jpg';
-import Four from '../../images/park4.jpg';
-import Five from '../../images/park5.jpg';
-import Six from '../../images/park6.jpg';
+import One from '../../images/car1.jpg';
+import Two from '../../images/car2.jpg';
+import Three from '../../images/car3.jpg';
+import Four from '../../images/car4.jpg';
+import Five from '../../images/car5.jpg';
+import Six from '../../images/car6.jpg';
 
 
 function Slider() {

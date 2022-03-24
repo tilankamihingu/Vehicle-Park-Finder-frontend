@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="foot-content">
                 <p>0914879811</p>
                 <p>main street, galle, sri lanka</p>
-                <p>paradize@gmail.com</p>
+                <p>Cavallos@gmail.com</p>
             </div>
         </footer>
     )

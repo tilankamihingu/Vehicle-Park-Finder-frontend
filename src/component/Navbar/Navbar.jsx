@@ -17,12 +17,12 @@ function Navbar() {
     return (
         <div className="container">
             <div className="navbar">
-                <h2>Park Finder</h2>
+                <h2>Cavallo</h2>
                 <nav>
                     <ul style={styleMenu}>
                         <li onClick={toggleMenu}><Link to="/">Home</Link></li>
-                        <li onClick={toggleMenu}><Link to="/parks">Parks</Link></li>
-                        <li onClick={toggleMenu}><Link to="/add">Add Park</Link></li>
+                        <li onClick={toggleMenu}><Link to="/parks">Cars</Link></li>
+                        <li onClick={toggleMenu}><Link to="/add">Add Cars</Link></li>
                         <li onClick={toggleMenu}><img src={Close} className="menu" alt="" /></li>
                     </ul>
                 </nav>

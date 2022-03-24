@@ -12,8 +12,8 @@
  }
  
  .item{
-     background-color: #dee1ec;
-     box-shadow: 0 0 5px #ccc;
+     /*background-color: #dee1ec;
+     box-shadow: 0 0 5px #ccc;*/
      height: 400px;
      margin: 5px;
      display: flex;

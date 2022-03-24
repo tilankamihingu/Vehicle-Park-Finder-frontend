@@ -8,17 +8,18 @@ const Home = () => {
         <div className="full">
             <div className="home-container">
                 <div className="home-content">
-                    <h1>Find a park you want</h1>
+                    <h1>Find a car you want</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident<br /> itaque sit nostrum impedit unde illum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, libero?</p>
                     <div className="content-btn">
-                        <Link to = "/parks"><button className="view">View Parks</button></Link>
+                        <Link to = "/parks"><button className="view">View Cars</button></Link>
                     </div>
                 </div>
             </div>
             <div className="about-container">
                 <div className="about-content">
+                    <h6>what do you know about us?</h6>
                     <h1>Get to know Us</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minus illum praesentium, atque possimus quos, esse nulla quae quod provident temporibus animi! Totam quod nesciunt mollitia iusto deserunt culpa at!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minus illum praesentium, atque possimus quos, esse nulla quae quod provident temporibus animi! Totam quod nesciunt mollitia iusto deserunt culpa at Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi dolorem ipsum eius, fuga molestias facilis ipsam sunt laboriosam est harum eligendi perferendis? Fuga culpa ex deleniti sequi obcaecati atque?</p>
                 </div>
             </div>
             <div className="category-container">
